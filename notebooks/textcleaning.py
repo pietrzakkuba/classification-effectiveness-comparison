@@ -43,7 +43,7 @@ def clean_text_and_return_tokens(text: str) -> list[str]:
     return remove_stopwords_and_stem(text)
 
 
-sample = 'Programmers You  234234   have won a Nokia 7250i. This is what you get when you win our FREE auction. To take part send Nokia to 86021 now. https://stackoverflow.com/questions/11331982/how-to-remove-any-url-within-a-string-in-python/11332580'
+# sample = 'Programmers You  234234   have won a Nokia 7250i. This is what you get when you win our FREE auction. To take part send Nokia to 86021 now. https://stackoverflow.com/questions/11331982/how-to-remove-any-url-within-a-string-in-python/11332580'
 # stop_words = set(stopwords.words('english'))
 # word_tokens = word_tokenize(sample)
-print(clean_text(sample))
+# print(clean_text(sample))
