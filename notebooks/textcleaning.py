@@ -6,6 +6,7 @@ import string
 import os
 
 stemmer = SnowballStemmer('english')
+index = 0
 
 
 def remove_punctuation(text: str) -> str:
@@ -34,6 +35,9 @@ def remove_stopwords_and_stem(text: str) -> list[str]:
 
 
 def clean_text_and_return_tokens(text: str) -> list[str]:
+    global index
+    index += 1
+    os.write(1, (str(index) + '\n').encode())
     text = remove_links(text)
     text = remove_punctuation(text)
     text = lowercase(text)
